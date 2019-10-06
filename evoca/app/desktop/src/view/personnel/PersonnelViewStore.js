@@ -2,20 +2,35 @@ Ext.define('Evoca.view.personnel.PersonnelViewStore', {
     extend: 'Ext.data.Store',
     alias: 'store.personnelviewstore',
     fields: [
-        'name', 'email', 'phone', 'dept'
+        'Currency', 'Purchase', 'Sale', 'RateFor'
     ],
-    groupField: 'dept',
-    data: { items: [
-        { name: 'Jean Luc',   email: "jeanluc.picard@enterprise.com", phone: "555-111-1111", dept: "bridge" },
-        { name: 'ModernWorf', email: "worf.moghsson@enterprise.com",  phone: "555-222-2222", dept: "engine" },
-        { name: 'Deanna',     email: "deanna.troi@enterprise.com",    phone: "555-333-3333", dept: "bridge" },
-        { name: 'Data',       email: "mr.data@enterprise.com",        phone: "555-444-4444", dept: "bridge" }
-    ]},
+   // groupField: 'Currency',
+  /*  data: { items:  
+        Ext.Ajax.request({
+            url: 'https://online.evocabank.am/internetbank/api/exchangerates' ,
+            method: 'GET' ,
+           
+            headers:
+            {
+                'Content-Type' : 'application/json'
+            },
+            success: function (response) {
+           console.log(response.responseText)
+           return response.responseText;
+            },
+            failure: function (response) {
+                Ext.Msg.alert( 'Status' , 'Request Failed.' );
+
+            }
+        }) 
+    },*/
     proxy: {
-        type: 'memory',
+        type: 'ajax',
+        url: 'https://online.evocabank.am/internetbank/api/exchangerates' ,
         reader: {
             type: 'json',
             rootProperty: 'items'
         }
-    }
+    },
+    autoLoad: true
 });

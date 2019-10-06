@@ -15,7 +15,7 @@ Ext.define('Evoca.view.main.header.HeaderView', {
             ui: 'headerbutton',
             reference: 'detailtoggle',
             handler: 'onHeaderViewDetailToggle',
-            iconCls: 'x-fa fa-arrow-left'
+            iconCls: 'x-fa fa-align-justify'
         }
     ]
 });

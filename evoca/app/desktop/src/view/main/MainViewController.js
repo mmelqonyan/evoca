@@ -50,10 +50,10 @@ Ext.define('Evoca.view.main.MainViewController', {
 		var vm = this.getViewModel();
 		vm.set('detailCollapsed', !vm.get('detailCollapsed'));
 		if(vm.get('detailCollapsed')===true) {
-			button.setIconCls('x-fa fa-arrow-left');
+			button.setIconCls('x-fa fa-align-justify');
 		}
 		else {
-			button.setIconCls('x-fa fa-arrow-right');
+			button.setIconCls('x-fa fa-align-justify');
 		}
 	},
 

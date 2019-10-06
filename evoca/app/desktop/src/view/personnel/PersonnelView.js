@@ -3,7 +3,7 @@ Ext.define('Evoca.view.personnel.PersonnelView',{
     xtype: 'personnelview',
     cls: 'personnelview',
     requires: ['Ext.grid.rowedit.Plugin'],
-    controller: {type: 'personnelviewcontroller'},
+    
     viewModel: {type: 'personnelviewmodel'},
     store: {type: 'personnelviewstore'},
     grouped: true,
@@ -17,21 +17,32 @@ Ext.define('Evoca.view.personnel.PersonnelView',{
     },
     columns: [
         {
-            text: 'Name',
-            dataIndex: 'name',
-            editable: true,
+            text: 'Currency',
+            dataIndex: 'Currency',
+            editable: false,
             width: 100,
-            cell: {userCls: 'bold'}
+            
         },
-        {text: 'Email',dataIndex: 'email',editable: true, width: 230},
+        {text: 'Saless',
+        dataIndex: 'Sale',
+        editable: false,
+         width: 230},
         {
-            text: 'Phone',
-            dataIndex: 'phone',
-            editable: true,
+            text: 'Purchase',
+            dataIndex: 'Purchase',
+            editable: false,
             width: 150
-        }
+        },
+        {
+            text: 'RateFor',
+            dataIndex: 'RateFor',
+            editable: false,
+            width: 100,
+            
+        },
     ],
     listeners: {
-        canceledit: 'onEditCancelled'
+   
+
     }
 });

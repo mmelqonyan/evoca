@@ -3,11 +3,15 @@ Ext.define('Evoca.view.main.detail.DetailView', {
 	xtype: 'detailview',
   cls: 'detailview',
   layout: 'fit',
-  items: [
-    {
-      xtype: 'container', 
-      style: 'background:white', 
-      html: '<div style="padding:10px;font-size:24px;">detailview</div>'
-    }
-  ]
+  
+  /*items: [
+    
+      { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+                { "text": "Home1", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+      { "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
+      //add new items on the next line (from sencha-node generate viewpackage)
+
+    ]*/
+  
+  
 })

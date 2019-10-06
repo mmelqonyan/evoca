@@ -2,7 +2,7 @@ Ext.define('Evoca.view.main.MainViewModel', {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.mainviewmodel',
 	data: {
-		name: 'Evoca',
+		name: 'Evoc',
 		navCollapsed:       false,
 		navview_max_width:    300,
 		navview_min_width:     44,
@@ -13,8 +13,7 @@ Ext.define('Evoca.view.main.MainViewModel', {
 		detailCollapsed:     true,
 		detailview_width:      10,
 		detailview_max_width: 300,
-		detailview_min_width:   0,
-
+        detailview_min_width:   0,
 	},
 	formulas: {
 		navview_width: function(get) {
@@ -30,7 +29,8 @@ Ext.define('Evoca.view.main.MainViewModel', {
 			"root": {
 				"expanded": true,
 				"children": [
-          { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+					{ "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+                    { "text": "Home1", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
 					{ "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
 					//add new items on the next line (from sencha-node generate viewpackage)
 
@@ -39,3 +39,5 @@ Ext.define('Evoca.view.main.MainViewModel', {
 		}
 	}
 });
+
+    
