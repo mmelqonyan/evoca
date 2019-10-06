@@ -53,7 +53,7 @@ Ext.define('Evoca.view.main.MainViewController', {
 			button.setIconCls('x-fa fa-align-justify');
 		}
 		else {
-			button.setIconCls('x-fa fa-align-justify');
+			button.setIconCls('x-fa fa-arrow-right');
 		}
 	},
 
