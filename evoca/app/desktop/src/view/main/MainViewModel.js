@@ -2,7 +2,7 @@ Ext.define('Evoca.view.main.MainViewModel', {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.mainviewmodel',
 	data: {
-		name: 'Evoc',
+		name: 'PROMETEY BANK',
 		navCollapsed:       false,
 		navview_max_width:    300,
 		navview_min_width:     44,
@@ -29,9 +29,10 @@ Ext.define('Evoca.view.main.MainViewModel', {
 			"root": {
 				"expanded": true,
 				"children": [
-					{ "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
-                    { "text": "Home1", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
-					{ "text": "Taradram", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
+					{ "text": "Բանկ", "xtype": "tabpanel", "leaf": true },
+					{ "text": "Հետադարձ կապ", "xtype": "tabpanel", "leaf": true },
+                    { "text": "Քարտեզ", "xtype": "homeviewmap", "leaf": true },
+					{ "text": "Փոխարժեք", "xtype": "personnelview","leaf": true },
 					//add new items on the next line (from sencha-node generate viewpackage)
 
 				]
